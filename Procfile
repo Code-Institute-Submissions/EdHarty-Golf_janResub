@@ -1,1 +1,1 @@
-web: gunicorn golfstar.wsgi
+web: gunicorn Golf.wsgi
