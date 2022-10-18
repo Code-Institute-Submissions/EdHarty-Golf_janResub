@@ -6,9 +6,9 @@ urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
     path('contact_us/', views.ContactView.as_view(), name='contact'),
     path(
-        'web_booking/',
-        views.WebBookingView.as_view(),
-        name='web_booking'
+        'web_teetime/',
+        views.WebTeetimeView.as_view(),
+        name='web_teetime'
     ),
     path(
         'create_account/',
@@ -21,18 +21,18 @@ urlpatterns = [
         name='edit_account'
     ),
     path(
-        'change_booking/',
-        views.ChangeBooking.as_view(),
-        name='change_booking'
+        'change_teetime/',
+        views.ChangeTeetime.as_view(),
+        name='change_teetime'
     ),
     path(
-        'edit_booking/<str:booking_id>/',
-        views.EditBooking.as_view(),
-        name='edit_booking'
+        'edit_teetime/<str:teetime_id>/',
+        views.EditTeetime.as_view(),
+        name='edit_teetime'
     ),
     path(
-        'delete_booking/<str:booking_id>/',
-        views.DeleteBooking.as_view(),
-        name='delete_booking'
+        'delete_teetime/<str:teetime_id>/',
+        views.DeleteTeetime.as_view(),
+        name='delete_teetime'
     ),
 ]

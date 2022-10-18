@@ -3,9 +3,9 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.views.generic import TemplateView, DeleteView
 from django.urls import reverse_lazy
-# Import Booking model from models
+# Import Teetime
 from .models import Teetime, UserAccount
-from .forms import UpdateBookingDetails, EditAccountForm
+from .forms import UpdateTeetimeDetails, EditAccountForm
 
 
 class HomeView(TemplateView):
@@ -102,28 +102,28 @@ class EditAccount(View):
         )
 
 
-class ChangeBooking(generic.ListView):
-    model = Booking
-    queryset = Booking.objects.all()
-    template_name = "change_booking.html"
+class ChangeTeetime(generic.ListView):
+    model = Teetime
+    queryset = Teetime.objects.all()
+    template_name = "change_teetime.html"
     paginate_by = 6
     extra_context = {
-        "change_booking_active": "computer-blue"
+        "change_teetime_active": "computer-blue"
     }
 
     def get_queryset(self):
-        return Booking.objects.filter(user_id=self.request.user)
+        return Teetime.objects.filter(user_id=self.request.user)
 
 
-class WebBookingView(View):
-    template_name = "web_booking.html"
+class WebTeetimeView(View):
+    template_name = "web_teetime.html"
 
     def get(self, request, *args, **kwargs):
         return render(
             request,
-            "web_booking.html",
+            "web_teetime.html",
             {
-                "web_booking_active": "computer-blue",
+                "web_teetime_active": "computer-blue",
             }
         )
 
@@ -133,62 +133,62 @@ class WebBookingView(View):
         guest_count = request.POST.get("guest_count")
         comments = request.POST.get("comments")
 
-        web_booking = Booking.objects.create(
-            booking_date=date,
-            booking_time=time,
+        web_teetime = Teetime.objects.create(
+            teetime_date=date,
+            teetime_time=time,
             guest_count=guest_count,
             user=request.user,
-            booking_comments=comments
+            teetime_comments=comments
         )
 
-        web_booking.save()
+        web_teetime.save()
 
-        return redirect(reverse('_booking'))
+        return redirect(reverse('_teetime'))
 
 
-class EditBooking(View):
-    model = Booking
-    template_name = "edit_booking.html"
-    context_object_name = 'edit_booking'
+class EditTeetime(View):
+    model = Teetime
+    template_name = "edit_teetime.html"
+    context_object_name = 'edit_teetime'
 
-    def get(self, request, booking_id, *args, **kwargs):
-        booking = get_object_or_404(Booking, pk=booking_id)
+    def get(self, request, teetime_id, *args, **kwargs):
+        teetime = get_object_or_404(teetime, pk=teetime_id)
 
         return render(
             request,
-            "edit_booking.html",
+            "edit_teetime.html",
             {
-                "booking": booking,
+                "teetime": teetime,
                 "updated": False,
-                "Update_BookingDetails": UpdateBookingDetails(instance=booking)
+                "Update_TeetimeDetails": UpdateTeetimeDetails(instance=teetime)
             },
         )
 
-    def post(self, request, booking_id, *args, **kwargs):
-        booking = get_object_or_404(Booking, pk=booking_id)
+    def post(self, request, teetime_id, *args, **kwargs):
+        teetime = get_object_or_404(Teetime, pk=teetime_id)
 
-        booking_details_form = UpdateBookingDetails(
-            request.POST, instance=booking)
+        teetime_details_form = UpdateTeetimeDetails(
+            request.POST, instance=teetime)
 
-        if booking_details_form.is_valid():
-            booking.status = 0
-            booking_updates = booking_details_form.save()
+        if teetime_details_form.is_valid():
+            teetime.status = 0
+            teetime_updates = teetime_details_form.save()
         else:
-            booking_details_form = UpdateBookingDetails(instance=booking)
+            teetime_details_form = UpdateTeetimeDetails(instance=teetime)
 
         return render(
             request,
-            "edit_booking.html",
+            "edit_teetime.html",
             {
-                "booking": booking,
+                "teetime": teetime,
                 'updated': True,
-                "Update_BookingDetails": booking_details_form,
+                "Update_TeetimeDetails": teetime_details_form,
             },
         )
 
 
-class DeleteBooking(DeleteView):
+class DeleteTeetime(DeleteView):
     model = Teetime
     pk_url_kwarg = "teetime_id"
-    success_url = reverse_lazy("change_booking")
-    template_name = "delete_booking.html"
+    success_url = reverse_lazy("change_teetime")
+    template_name = "delete_teetime.html"

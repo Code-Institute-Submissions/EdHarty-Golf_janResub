@@ -40,7 +40,7 @@
                     </li>
 
                     <li class="nav-item px-2">
-                        <a class="nav-link {{ teetime_booking_active }}" href="{% url 'teetime_booking' %}">Tee Time</a>
+                        <a class="nav-link {{ web_teetime_active }}" href="{% url 'web_teetime' %}">Tee Time</a>
                     </li>
 
                     {% if user.is_authenticated %}
@@ -50,8 +50,8 @@
                     </li>
 
                     <li class="nav-item px-2">
-                        <a class="nav-link {{ manage_booking_active }}" href="{% url 'manage_booking' %}">Manage
-                            Booking</a>
+                        <a class="nav-link {{ manage_teetime_active }}" href="{% url 'manage_teetime' %}">Manage
+                            Teetime</a>
                     </li>
 
                     <li class="nav-item px-2">

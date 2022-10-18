@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<div class="w-75 mx-auto py-5">
+    <form action="." method="POST">
+        {% csrf_token %}
+
+        <h3>Do you want to cancel "{{ teetime.teetime_id }}"?</h3>
+
+        <button class="btn custom-red text-white" type="submit">Yes</button>
+
+        <a class="btn custom-red text-white" href="{% url 'change_teetime' %}">
+            Cancel
+        </a>
+    </form>
+</div>
+{% else %}
+
+Please login to cancel 
+
+{% endif %}
+
+{% endblock %}

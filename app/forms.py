@@ -3,11 +3,11 @@ from django import forms
 from django.forms import ModelForm, CharField, TextInput
 
 
-class UpdateBookingDetails(forms.ModelForm):
+class UpdateTeetimeDetails(forms.ModelForm):
     class Meta:
-        model = Booking
+        model = Teetime
         fields = (
-            'booking_date', 'booking_time', 'player_count', 'booking_comments')
+            'teetime_date', 'teetime_time', 'player_count', 'teetime_comments')
 
 
 class EditAccountForm(forms.ModelForm):
