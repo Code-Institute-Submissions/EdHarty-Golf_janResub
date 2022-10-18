@@ -13,8 +13,8 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-.custom-red {
-    background-color: #BD3C31;
+.computer-blue {
+    background-color: black;
 }
 
 .contact_icons {
@@ -24,28 +24,6 @@ body {
 
 .fit-width {
     width: fit-content;
-}
-
-/* Background animation */
-.bg {
-    animation: slide 5s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #272727 50%, #201B1B 50%);
-    bottom: 0;
-    left: -50%;
-    opacity: 0.5;
-    position: fixed;
-    right: -50%;
-    top: 0;
-    z-index: -1;
-}
-
-.bg2 {
-    animation-direction: alternate-reverse;
-    animation-duration: 4s;
-}
-
-.bg3 {
-    animation-duration: 5s;
 }
 
 @keyframes slide {
@@ -60,7 +38,7 @@ body {
 /* Navigation bar */
 
 .active_page {
-    background-color: #BD3C31;
+    background-color: rgb(184, 184, 192);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -73,7 +51,7 @@ body {
     color: #fff;
 }
   
-/* Footer */
+/* footer */
 
 footer i {
     font-size: 200%;
@@ -90,7 +68,7 @@ footer i {
 }
 
 .btn-danger {
-    background-color: #BD3C31;
+    background-color: black;
 }
 
 # {
