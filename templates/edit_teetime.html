@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="container text-center computer-blue mt-5">
+    <div class="row my-3">
+        <div class="col-12">
+            <h2 class="text-decoration-underline">Teetime Details</h2>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-6">
+            <h5>Teetime Status:</h5>
+        </div>
+        <div class="col-6">
+            <p>
+                {% if teetime.status == 1 %}
+                Teetime Accepted
+                {% else %}
+                Teetime Requested
+                {% endif %}
+            </p>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-6">
+            <h5>Teetime Reference:</h5>
+        </div>
+
+        <div class="col-6">
+            <p>{{ teetime.teetime_id}}</p>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-6">
+            <h5>Date:</h5>
+        </div>
+
+        <div class="col-6">
+            <p>{{ teetime.teetime_date }}</p>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-6">
+            <h5>Tee Off Time:</h5>
+        </div>
+
+        <div class="col-6">
+            <p>{{ teetime.teetime_time }}</p>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-6">
+            <h5>Player Count:</h5>
+        </div>
+
+        <div class="col-6">
+            <p>{{ teetime.player_count }}</p>
+        </div>
+    </div>
+
+        <div class="col-6">
+            <p>{{ teetime.teetime_comments}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center mt-5">
+    <div class="row my-3">
+        <div class="col-12">
+            {% if updated %}
+
+            <div class="alert alert-success" role="alert">
+                awaiting approval
+            </div>
+
+            {% else %}
+
+            {% if user.is_authenticated %}
+
+            <form method="post">
+                {% csrf_token %}
+
+                {{ Update_TeetimeDetails | crispy }}
+
+                <button type="submit" class="btn computer-blue text-white my-3">Submit Changes</button>
+            </form>
+
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
