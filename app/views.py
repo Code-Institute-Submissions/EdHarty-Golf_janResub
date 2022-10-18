@@ -34,7 +34,7 @@ class ContactView(TemplateView):
         )
 
 
-        class CreateAccount(View):
+class CreateAccount(View):
     template_name = "create_account.html"
 
     def get(self, request, *args, **kwargs):
@@ -189,6 +189,6 @@ class EditBooking(View):
 
 class DeleteBooking(DeleteView):
     model = Teetime
-    pk_url_kwarg = "booking_id"
+    pk_url_kwarg = "teetime_id"
     success_url = reverse_lazy("change_booking")
     template_name = "delete_booking.html"
