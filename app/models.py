@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 STATUS = ((0, "Teetime Requested"), (1, "Teetime Accepted"))
 
+
 class Teetime(models.Model):
     teetime_id = models.UUIDField(
         primary_key=True, default=uuid.uuid4, editable=False)
@@ -14,8 +15,10 @@ class Teetime(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     player_count = models.IntegerField()
     status = models.IntegerField(choices=STATUS, default=0)
+
     class Meta:
         ordering = ['-teetime_date']
+
 class UserAccount(models.Model):
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, primary_key=True)
