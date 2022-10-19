@@ -1,4 +1,4 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Open+Sans:ital,wght@0,400;1,500&display=swap');
 
 /* style */
 * {
@@ -10,7 +10,8 @@
 body {
     background-color: rgb(195, 215, 195);
     color: #fff;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .computer-blue {
