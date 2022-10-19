@@ -137,7 +137,6 @@ The user will then need to select a date, time, number of players.
 ### Google Developer Tools
 
 I also checked the accessibility of the page using lighthouse.
-![google_lighthouse](documentation_assets/images/google_lighthouse.png)
 
 ### Responsive Tools
 I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive to all devices.
