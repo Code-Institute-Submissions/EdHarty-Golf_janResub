@@ -15,7 +15,7 @@ A live website can be found [here](https://golfstar.herokuapp.com/).
             -   [Wireframes](#wireframes)
             -   [Design](#design)
 -   [2. Features](#features)
--   [3. Project Implementation Aids](#project implementation aids)
+-   [3. Project](#project)
 -   [4. Testing](#testing)
 -   [5. Project Checklist](#project-checklist)
 -   [6. Deployment](#deployment)
@@ -108,7 +108,7 @@ The user will then need to select a date, time, number of players.
 ### Cancel Tee time
 - When the user clicks the cancel tee time button they will be redirected to a confirmation page.
 
-## 3. Project Implementation Aids
+## 3. Project
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML)
     
