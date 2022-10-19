@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center text-decoration-underline py-3">Change my Teetime</h2>
+        </div>
+    </div>
+
+    {% for teetime in teetime_list %}
+    <div class="row py-5">
+        <div class="col-12">
+            <div class="card bg-dark">
+                <div class="card-body ">
+                    <h5 class="card-title">Reference: {{ teetime.teetime_id }}</h5>
+                    <p class="card-text">
+                        Status: {% if teetime.status == 1 %}
+                        Teetime Accepted
+                        {% else %}
+                        Teetime Requested
+                        {% endif %}
+                    </p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-dark text-white">Teetime Date: {{ teetime.teetime_date }}</li>
+                    <li class="list-group-item bg-dark text-white">Teetime Time: {{ teetime.teetime_time }}</li>
+                    <li class="list-group-item bg-dark text-white">Player Count: {{ teetime.player_count }}</li>
+                </ul>
+
+                <div class="card-body d-flex">
+                    <a href="{% url 'edit_teetime' teetime.teetime_id %}" class="card-link btn computer-blue text-white">
+                        Change Teetime Details
+                    </a>
+                    <a href="{% url 'delete_teetime' teetime.teetime_id %}" class="card-link btn computer-blue text-white">
+                        Cancel 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}
