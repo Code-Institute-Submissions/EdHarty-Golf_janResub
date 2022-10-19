@@ -228,6 +228,9 @@ For the final deployment to Heroku, I had to:
 
 # 7. Bugs
 
+<img width="704" alt="bug (2)" src="https://user-images.githubusercontent.com/88341568/196669401-2fba6b8b-7375-4604-b912-bf16b71e8d61.png">
+
+
 
 
 
