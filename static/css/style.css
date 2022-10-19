@@ -26,49 +26,18 @@ body {
     width: fit-content;
 }
 
-/* Background animation */
-.bg {
-    animation: slide 5s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #272727 50%, #201B1B 50%);
-    bottom: 0;
-    left: -50%;
-    opacity: 0.5;
-    position: fixed;
-    right: -50%;
-    top: 0;
-    z-index: -1;
-}
-
-.bg2 {
-    animation-direction: alternate-reverse;
-    animation-duration: 4s;
-}
-
-.bg3 {
-    animation-duration: 5s;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(-25%);
-    }
-    100% {
-        transform: translateX(25%);
-    }
-}
-
 /* Navigation bar */
 
 .active_page {
-    background-color: rgb(184, 184, 192);
+    background-color:rgb(195, 215, 195);
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
 
-/* Modify booking details modal */
-.booking_changes {
+/* modal */
+.teetime_changes {
     background-color:#212529;
     color: #fff;
 }
