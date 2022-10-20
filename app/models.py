@@ -19,6 +19,7 @@ class Teetime(models.Model):
     class Meta:
         ordering = ['-teetime_date']
 
+
 class UserAccount(models.Model):
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, primary_key=True)
