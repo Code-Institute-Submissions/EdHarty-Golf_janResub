@@ -2,7 +2,7 @@
 
 Welcome to my website.
 
-Given the project brief, I wanted to make a fully functional website where the user create, read, update and delete their account and scheduled golf sessions.
+Given the project brief, I wanted to make a fully functional website where the user can create, read, update and delete their account and scheduled golf sessions.
 
 A live website can be found [here](https://golfstar.herokuapp.com/).
 
@@ -24,7 +24,7 @@ A live website can be found [here](https://golfstar.herokuapp.com/).
 
 # 1. UX
 
-As an avid golfer, I have try my best to get out when I can and when it's quiet on the greens. I find the most convenient way of scheduling a round of golf is online. An easy to use visually appealing website that is concise makes it an appealing option to get a round of golf organised.
+As an avid golfer, I have tried my best to get out when I can and when it's quiet on the golf course. I find the most convenient way of scheduling a round of golf is online. An easy to use visually appealing website that is concise makes it an appealing option to get a round of golf organised.
 
 Hopefully this website will demonstrate such ease of use when it comes to CRUD functionality.
 
@@ -157,7 +157,7 @@ I used [PEP8 online](http://pep8online.com/) to check for any errors within my P
 # 5 Project Checklist
 
 - Install Django and the supporting libraries
-    -  Install Django and Gunicorn. Gunicorn is the server I am using to run Django on Heroku.
+    - Install Django and Gunicorn. Gunicorn is the server I am using to run Django on Heroku.
     - Install support libraries including psycopg2, this is used to connect the PostgreSQL database
     - Install Cloudinary libraries, this is a host provider service that stores images
     - Create the requirements.txt file. This includes the project's dependencies allowing us to run the project in Heroku.
@@ -165,7 +165,7 @@ I used [PEP8 online](http://pep8online.com/) to check for any errors within my P
 - Create a new, blank Django Project
     - Create a new project
     - Create the app
-    - Add restaurant_booking to the installed apps in settings.py
+    - Add app to the installed apps in settings.py
     - Migrate all new changes to the database
     - Run the server to test
 
