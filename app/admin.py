@@ -7,8 +7,8 @@ from .models import Teetime, UserAccount
 class TeetimeAdmin(admin.ModelAdmin):
     list_filter = ('status', 'teetime_time', 'teetime_date')
     readonly_fields = ('teetime_id')
-    list_display = ('teetime_id', 'user', 'teetime_date', 'teetime_time', 'player_count',
-     'status', 'created_on')
+    list_display = ('teetime_id', 'user', 'teetime_date', 'teetime_time',
+                    'player_count', 'status', 'created_on')
     search_fields = ('teetime_id', 'user')
     actions = ['approve_teetime']
 
