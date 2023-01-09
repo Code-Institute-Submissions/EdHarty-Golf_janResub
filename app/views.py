@@ -67,7 +67,7 @@ class EditAccount(View):
 
     def get(self, request, user, *args, **kwargs):
         account = UserAccount.objects.filter(user=user).first()
-        if rofile is None:
+        if account is None:
             return redirect(reverse('create_account'))
 
         return render(
