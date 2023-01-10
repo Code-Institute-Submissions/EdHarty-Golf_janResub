@@ -7,7 +7,7 @@
 
 {% if user.is_authenticated %}
 <div class="container">
-    <div class="computer-blue py-3 my-5">
+    <div class="py-3 my-5">
         <div class="row text-center">
             <h2 class="text-decoration-underline">Edit Account</h2>
         </div>
@@ -61,7 +61,7 @@
                     {{ Edit_AccountForm | crispy }}
 
                     <div class="col-12 text-center">
-                        <button type="submit" value="Update" class="btn computer-blue text-white">
+                        <button type="submit" value="Update" class="btn text-white">
                             Update Account
                         </button>
                     </div>
