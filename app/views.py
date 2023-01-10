@@ -16,7 +16,7 @@ class HomeView(TemplateView):
             request,
             "index.html",
             {
-                "home_active": "computer-blue",
+                "home_active",
             }
         )
 
@@ -29,7 +29,7 @@ class ContactView(TemplateView):
             request,
             "contact.html",
             {
-                "contact_active": "computer-blue",
+                "contact_active",
             }
         )
 
@@ -77,7 +77,7 @@ class EditAccount(View):
                 "account": account,
                 "updated": False,
                 "Edit_AcccountForm": EditAccountForm,
-                "edit_account_active": "computer-blue",
+                "edit_account_active"
             },
         )
 
@@ -108,7 +108,7 @@ class ChangeTeetime(generic.ListView):
     template_name = "change_teetime.html"
     paginate_by = 6
     extra_context = {
-        "change_teetime_active": "computer-blue"
+        "change_teetime_active"
     }
 
     def get_queryset(self):
@@ -123,7 +123,7 @@ class WebTeetimeView(View):
             request,
             "web_teetime.html",
             {
-                "web_teetime_active": "computer-blue",
+                "web_teetime_active"
             }
         )
 
