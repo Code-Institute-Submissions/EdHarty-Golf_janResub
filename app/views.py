@@ -130,13 +130,13 @@ class WebTeetimeView(View):
     def post(self, request):
         date = request.POST.get("date")
         time = request.POST.get("time")
-        guest_count = request.POST.get("guest_count")
+        player_count = request.POST.get("player_count")
         comments = request.POST.get("comments")
 
         web_teetime = Teetime.objects.create(
             teetime_date=date,
             teetime_time=time,
-            guest_count=guest_count,
+            player_count=player_count,
             user=request.user,
             teetime_comments=comments
         )
