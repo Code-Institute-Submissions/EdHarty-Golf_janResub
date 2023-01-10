@@ -11,7 +11,7 @@ class Teetime(models.Model):
         User, on_delete=models.CASCADE, related_name="user_teetime")
     teetime_date = models.DateField(auto_now=False)
     teetime_time = models.TimeField(auto_now=False)
-    teetime_comments = models.TextField(max_length=180, blank=True)
+    teetime_comments = models.TextField(max_length=180, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
     player_count = models.IntegerField()
     status = models.IntegerField(choices=STATUS, default=0)
