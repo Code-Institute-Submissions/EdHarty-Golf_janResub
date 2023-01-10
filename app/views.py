@@ -143,7 +143,7 @@ class WebTeetimeView(View):
 
         web_teetime.save()
 
-        return redirect(reverse('_teetime'))
+        return redirect(reverse('change_teetime'))
 
 
 class EditTeetime(View):
