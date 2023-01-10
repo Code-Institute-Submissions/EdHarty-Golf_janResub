@@ -152,7 +152,7 @@ class EditTeetime(View):
     context_object_name = 'edit_teetime'
 
     def get(self, request, teetime_id, *args, **kwargs):
-        teetime = get_object_or_404(teetime, pk=teetime_id)
+        teetime = get_object_or_404(Teetime, pk=teetime_id)
 
         return render(
             request,
