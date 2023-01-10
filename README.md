@@ -6,6 +6,12 @@ Given the project brief, I wanted to make a fully functional website where the u
 
 A live website can be found [here](https://golfstar.herokuapp.com/).
 
+
+<img width="916" alt="Am I resp pro 4" src="https://user-images.githubusercontent.com/88341568/211676464-a21a74cd-3930-4744-b9da-447868058b92.png">
+
+
+
+
 # Table of Contents
 
 -   [1. UX](#ux)
@@ -51,14 +57,41 @@ To be able to navigate through the user interface with ease.
 -   The navbar should make it easier to select the required feature.
 -   The site should be resposive on mobile, desktop and ipad .
 
+### Wireframes:
+
+
+<img width="720" alt="2023-01-10 (7)" src="https://user-images.githubusercontent.com/88341568/211678975-4b92e0e8-ba94-4918-83d5-ea2388487e9f.png">
+
+
+<img width="447" alt="2023-01-10 (11)" src="https://user-images.githubusercontent.com/88341568/211679601-45ff9ac4-96a7-49b8-86ed-6c402c9c27e9.png">
+
+
+<img width="697" alt="2023-01-10 (13)" src="https://user-images.githubusercontent.com/88341568/211680156-bd88a678-d040-4fc6-a797-af593e9f13cc.png">
+
+
+
 ### User Stories
 I took an AGILE approach to the implementation of the project. I used the tools on github such as issues, milestones and project boards to document my user stories. This helped to visualise and prioritise the project tasks. The labels, for example, are a good visual marker of what has to be done. The project board was useful to cycle the issues from to do, to doing and then finally to done.
+
+
+<img width="956" alt="2023-01-10 (5)" src="https://user-images.githubusercontent.com/88341568/211677380-1d87bdfc-5dde-40f1-a37b-261c99669e20.png">
+
+
 
 # 2. Features
 
 ### All Pages
 - The navbar is located at the top of all of the pages. The navbar is options will change accordingly as to when you are logged in or out.
 - The footer contains social media icons. There is a zoom effect when hovering over icons. If icons are clicked the relevant links are provided.
+
+
+<img width="645" alt="2023-01-10 (26)" src="https://user-images.githubusercontent.com/88341568/211682686-e92ca433-6b02-4891-a305-e9626ad62573.png">
+
+
+<img width="652" alt="2023-01-10 (25)" src="https://user-images.githubusercontent.com/88341568/211682545-4ea36032-060d-4584-adee-6d6c0c84ab61.png">
+
+
+
 
 ### Register Page
 - Is a signup form that prompts the user to enter an email address and a password. The password must be confirmed.
