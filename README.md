@@ -101,45 +101,81 @@ I took an AGILE approach to the implementation of the project. I used the tools 
 - If the user enters passwords that are not the same, a message is received informing them of same.
 - Once the user has signed up, the user will be directed to the create account page.
 
+
+<img width="956" alt="2023-01-10 (38)" src="https://user-images.githubusercontent.com/88341568/211686121-32434844-2a90-489e-86fd-4fccd8f7386d.png">
+
+
+
 ### Login Page
 - Requires the user to enter an email address and password.
 - The user will be prompted if they have created an account already. They can use the sign-in link to be redirected to the sign-in page.
 - If the user enters passwords that are not the same, a message is received informing them of same.
 
+
+<img width="960" alt="2023-01-10 (28)" src="https://user-images.githubusercontent.com/88341568/211686331-72418e47-6592-476c-b7ff-a501f11b929a.png">
+
+
+
 ### Logout Page
 - When clicking logout from the navigation bar, the user is redirected to a sign-out page to confirm their action.
+
+
+<img width="956" alt="2023-01-10 (29)" src="https://user-images.githubusercontent.com/88341568/211686546-0e04a532-f563-4dce-b1b3-3df6ae94c33e.png">
+
+
+
 
 ### Home Page
 - A Tee Off button lets the user to create a tee time page. If the user has not logged in it will prompt the user to register or log in first.
 - A brief summary of the course is described.
 
-### Create Account Page
-- Once the user has registered they will be redirected to the create account page. The page displays a form for the user to enter their name, last name and number.
+
+<img width="960" alt="2023-01-10 (16)" src="https://user-images.githubusercontent.com/88341568/211686224-26f9954d-36e4-4714-b724-453d2e64bb62.png">
+
+
 
 ### Edit Account Page
 - This page will display the current account details with a form below for the user to update details.
+
+
+<img width="956" alt="2023-01-10 (30)" src="https://user-images.githubusercontent.com/88341568/211687569-b072491f-2fbb-4c49-bb0a-2e0a18057039.png">
+
+
 
 ### Contact Page
 - An information section that displays the number, email address, opening times and address.
 - A contact form that requires the user to enter their full name, email address and a message.
 
+
+<img width="960" alt="2023-01-10 (31)" src="https://user-images.githubusercontent.com/88341568/211687659-52f3d216-cfab-46d1-9c61-810ff2e8979a.png">
+
+
 ### Create Tee time Page
 - A form that requires the user to select the tee time details.
 Full name and contact telephone number are prefilled if the user has created a account.
 The user will then need to select a date, time, number of players.
-- As the club is only open from 8 AM, if the user selects a time before that, the form will display an error.
+
+
+<img width="960" alt="2023-01-10 (32)" src="https://user-images.githubusercontent.com/88341568/211687799-1011303f-e968-4916-af9f-26cf881ed98d.png">
+
 
 
 ### Change Tee time Page
 - Displays all tee times in a list.
 - It show a tee time reference, status, date, time, player count. It will also contain a button to change tee time details and a cancel tee time button.
 
-### Edit Tee time Page
-- This page will display the current tee time details with a form below for the user to update any details.
-- When the changes are submitted, the tee time will be processed as the tee time requested status.
+
+<img width="956" alt="2023-01-10 (33)" src="https://user-images.githubusercontent.com/88341568/211688087-ab20b6e4-a392-4c19-99fb-9b610a986b73.png">
+
+
 
 ### Cancel Tee time
 - When the user clicks the cancel tee time button they will be redirected to a confirmation page.
+
+
+<img width="956" alt="2023-01-11 (2)" src="https://user-images.githubusercontent.com/88341568/211689890-eb77a58c-e2e3-4568-84ca-f1058a24a992.png">
+
+
 
 ## 3. Project
 
@@ -170,6 +206,32 @@ The user will then need to select a date, time, number of players.
 ### Google Developer Tools
 
 I also checked the accessibility of the page using lighthouse.
+
+
+<img width="954" alt="Lt perf home" src="https://user-images.githubusercontent.com/88341568/211690301-9fb9db12-a75f-425a-9d79-af7836664c18.png">
+
+
+<img width="956" alt="Lt perf contact" src="https://user-images.githubusercontent.com/88341568/211690341-538acfbc-ea37-4dfb-82c4-4715f38bcaf4.png">
+
+
+<img width="949" alt="Lt perf signup" src="https://user-images.githubusercontent.com/88341568/211690395-5fb66699-db2f-42ee-912a-e6a3c0a97198.png">
+
+
+<img width="955" alt="Lt perf signin" src="https://user-images.githubusercontent.com/88341568/211690440-6d9eedc2-1b8e-4e32-9aa6-07b785a6c21f.png">
+
+
+<img width="955" alt="Lt perf teetime" src="https://user-images.githubusercontent.com/88341568/211690526-db61d9f9-2cc6-494f-9cef-b5542099eaff.png">
+
+
+<img width="955" alt="Lt perf edit acc" src="https://user-images.githubusercontent.com/88341568/211690583-4987fe74-f187-4755-8368-76f0a6d7f13b.png">
+
+
+<img width="955" alt="Lt perf change teetime" src="https://user-images.githubusercontent.com/88341568/211690624-fcba8fce-bc90-46a0-88e3-f4e8cf686e14.png">
+
+
+<img width="955" alt="Lt perf signout" src="https://user-images.githubusercontent.com/88341568/211690656-eea4d810-7b88-4e16-9731-9e6f9620367a.png">
+
+
 
 ### Responsive Tools
 I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive to all devices.
