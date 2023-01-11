@@ -16,12 +16,12 @@ A live website can be found [here](https://golfstar.herokuapp.com/).
 
 -   [1. UX](#ux)
             -   [Project Goals](#project-goals)
-            -   [User Goals:](#user-goals)
-            -   [User Expectations:](#user-expectations)
+            -   [User Goals](#user-goals)
+            -   [User Expectations](#user-expectations)
             -   [Wireframes](#wireframes)
             -   [Design](#design)
 -   [2. Features](#features)
--   [3. Project](#project)
+-   [3. Project Tools Used](#project-tools-used)
 -   [4. Testing](#testing)
 -   [5. Project Checklist](#project-checklist)
 -   [6. Deployment](#deployment)
@@ -38,7 +38,7 @@ Hopefully this website will demonstrate such ease of use when it comes to CRUD f
 
 The goal of this project is to build a website that allows the user to create and update a user account and create, update and delete a teetime booking in an easy efficient manner.
 
-### User Goals:
+### User Goals
 
 New User
 To be able to sign up for a user account.
@@ -50,7 +50,7 @@ To be able manage my tee time.
 To be able to cancel a tee time if needed.
 To be able to edit my account
 
-### User Expectations:
+### User Expectations
 To be able to navigate through the user interface with ease. 
 
 -   The home page should be informative.
@@ -177,7 +177,7 @@ The user will then need to select a date, time, number of players.
 
 
 
-## 3. Project
+## 3. Project Tools Used
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML)
     
@@ -205,7 +205,7 @@ The user will then need to select a date, time, number of players.
 
 ### Google Developer Tools
 
-I also checked the accessibility of the page using lighthouse.
+I also checked the performance and accessibility of the pages using lighthouse.
 
 
 <img width="954" alt="Lt perf home" src="https://user-images.githubusercontent.com/88341568/211690301-9fb9db12-a75f-425a-9d79-af7836664c18.png">
