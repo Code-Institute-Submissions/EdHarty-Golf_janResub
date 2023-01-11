@@ -19,7 +19,6 @@ A live website can be found [here](https://golfstar.herokuapp.com/).
             -   [User Goals](#user-goals)
             -   [User Expectations](#user-expectations)
             -   [Wireframes](#wireframes)
-            -   [Design](#design)
 -   [2. Features](#features)
 -   [3. Project Tools Used](#project-tools-used)
 -   [4. Testing](#testing)
@@ -43,10 +42,10 @@ The goal of this project is to build a website that allows the user to create an
 New User
 To be able to sign up for a user account.
 To be able to shedule a teetime for a particular date and time.
-TO be able to view the contact details of the website.
+To be able to view the contact details of the website.
 
 Account Holder:
-To be able manage my tee time.
+To be able change my tee time.
 To be able to cancel a tee time if needed.
 To be able to edit my account
 
@@ -81,7 +80,7 @@ I took an AGILE approach to the implementation of the project. I used the tools 
 # 2. Features
 
 ### All Pages
-- The navbar is located at the top of all of the pages. The navbar is options will change accordingly as to when you are logged in or out.
+- The navbar is located at the top of all of the pages. The navbar options will change accordingly as to when you are logged in or out.
 - The footer contains social media icons. There is a zoom effect when hovering over icons. If icons are clicked the relevant links are provided.
 
 
@@ -152,7 +151,7 @@ I took an AGILE approach to the implementation of the project. I used the tools 
 
 ### Create Tee time Page
 - A form that requires the user to select the tee time details.
-Full name and contact telephone number are prefilled if the user has created a account.
+Full name and contact telephone number are prefilled if the user has created an account.
 The user will then need to select a date, time, number of players.
 
 
@@ -162,7 +161,7 @@ The user will then need to select a date, time, number of players.
 
 ### Change Tee time Page
 - Displays all tee times in a list.
-- It show a tee time reference, status, date, time, player count. It will also contain a button to change tee time details and a cancel tee time button.
+- It shows a tee time reference, status, date, time, player count. It also contains a button to change the tee time details and a cancel tee time button.
 
 
 <img width="956" alt="2023-01-10 (33)" src="https://user-images.githubusercontent.com/88341568/211688087-ab20b6e4-a392-4c19-99fb-9b610a986b73.png">
@@ -205,7 +204,7 @@ The user will then need to select a date, time, number of players.
 
 ### Google Developer Tools
 
-I also checked the performance and accessibility of the pages using lighthouse.
+I checked the performance and accessibility of the pages using lighthouse.
 
 
 <img width="954" alt="Lt perf home" src="https://user-images.githubusercontent.com/88341568/211690301-9fb9db12-a75f-425a-9d79-af7836664c18.png">
@@ -234,38 +233,71 @@ I also checked the performance and accessibility of the pages using lighthouse.
 
 
 ### Responsive Tools
-I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive to all devices.
+I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive on all devices.
 
 ### W3C Validator Tools
 #### HTML:
 I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within the HTML pages.
 
+
+<img width="956" alt="2023-01-11 (7)" src="https://user-images.githubusercontent.com/88341568/211766637-084a8018-0ce4-4c8b-bb02-72493dc3ba91.png">
+
+
 #### CSS:
 I used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to check for any errors within my CSS stylesheet.
+
+
+<img width="960" alt="2023-01-11 (8)" src="https://user-images.githubusercontent.com/88341568/211767488-4c9afc5c-472a-4403-8d2d-792295c67757.png">
+
 
 ### JavaScript:
 I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript script tags.
 
+
+<img width="490" alt="2023-01-11 (10)" src="https://user-images.githubusercontent.com/88341568/211768241-2aca4ea6-7e1d-49ab-873e-e76b0aa26b6e.png">
+
+
 ### Python:
-I used [PEP8 online](http://pep8online.com/) to check for any errors within my Python files. 
+I used [PEP8 online](http://pep8online.com/) to check for any errors within my Python files.
+
+
+### Manual Testing:
+I tested the website on various different browsers and devices.
+
+- Browsers
+
+            - Mozilla Firefox.
+            - Google Chrome.
+            - Microsoft Edge.
+          
+- Devices
+
+            - Android Smartphone.
+            - Ipad Air.
+            - Laptop.
+            
 
 # 5 Project Checklist
 
 - Install Django and the supporting libraries
-    - Install Django and Gunicorn. Gunicorn is the server I am using to run Django on Heroku.
-    - Install support libraries including psycopg2, this is used to connect the PostgreSQL database
-    - Install Cloudinary libraries, this is a host provider service that stores images
-    - Create the requirements.txt file. This includes the project's dependencies allowing us to run the project in Heroku.
+
+            - Install Django and Gunicorn. Gunicorn is the server I am using to run Django on Heroku.
+            - Install support libraries including psycopg2, this is used to connect the PostgreSQL database
+            - Install Cloudinary libraries, this is a host provider service that stores images
+            - Create the requirements.txt file. This includes the project's dependencies allowing us to run the project in Heroku.
 
 - Create a new, blank Django Project
-    - Create a new project
-    - Create the app
-    - Add app to the installed apps in settings.py
-    - Migrate all new changes to the database
-    - Run the server to test
+            
+            - Create a new project
+            - Create the app
+            - Add app to the installed apps in settings.py
+            - Migrate all new changes to the database
+            - Run the server to test
 
 - Setup project to use Cloudinary and PostgreSQL
-    - Create new Heroku app
+
+- Create new Heroku app
+
         - Sign into Heroku
         - Select New
         - Select create new app
@@ -273,13 +305,15 @@ I used [PEP8 online](http://pep8online.com/) to check for any errors within my P
         - Select appropriate region
         - Select the create app button
 
-    - Attach PostgreSQL database
+ - Attach PostgreSQL database
+    
         - In Heroku go to resources
         - Search for Postgres in the add-ons box
         - Select Heroku Postgres
         - Submit order form
 
-    - Prepare the environment and settings.py file
+- Prepare the environment and settings.py file
+    
         - Create env.py file
         - Add DATABASE_URL with the Postgres URL from Heroku
         - Add SECRET_KEY with a randomly generated key
@@ -289,7 +323,8 @@ I used [PEP8 online](http://pep8online.com/) to check for any errors within my P
         - Add Heroku database as the back end
         - Migrate changes to new database
 
-    - Get static media files stored on Cloudinary
+- Get static media files stored on Cloudinary
+    
         - Create a Cloudinary account
         - From the dashboard, copy the API Environment variable
         - In the settings.py file create a new environment variable for CLOUDINARY_URL
@@ -320,9 +355,55 @@ For the final deployment to Heroku, I had to:
 3. In Heroku, remove the DISABLE_COLLECTSTATIC config var.
 4. In the deploy tab, go to the manual deploy sections and click deploy branch.
 
-# 7. Bugs
 
-<img width="704" alt="bug (2)" src="https://user-images.githubusercontent.com/88341568/196669401-2fba6b8b-7375-4604-b912-bf16b71e8d61.png">
+<img width="956" alt="2022-10-15 (4)" src="https://user-images.githubusercontent.com/88341568/211751238-a0c0b9df-6712-481d-b9a3-7ab5e384e346.png">
+
+
+
+# 7. Resolved Bugs
+
+I was getting a server 500 error. Firstly I had change my DEBUG settings to True to view the bug. In order to resolve the issue I needed to change my model to include the null=True value rather than null=blank.
+
+
+<img width="960" alt="player count err (2)" src="https://user-images.githubusercontent.com/88341568/211751523-b86726c7-4ccc-4701-b8ba-868c6967b099.png">
+
+
+<img width="960" alt="2023-01-11 (3)" src="https://user-images.githubusercontent.com/88341568/211753693-b4ef546d-fe36-4225-bf8d-f5e8eedb18f7.png">
+
+
+I had an application error. In my requirements.txt file, I found that gunicorn had not been installed. Once it was installed the application error subsided.
+
+
+<img width="956" alt="2022-12-07 (8)" src="https://user-images.githubusercontent.com/88341568/211754513-6bd1258c-643e-4e55-9eb5-60efee64a1fd.png">
+
+
+
+# 8. Credits
+
+- Code
+            
+            - Bootstrap - The styling and column structure.
+            - Code Institute – project tutorials.
+            
+- Content
+            
+            - Images – https://www.pexels.com/
+            - Colour scheme – https://mycolor.space/
+            - Compress images – https://tinypng.com/ 
+            - Font - https://fonts.google.com/
+            - Icons - https://fontawesome.com/
+
+- Project Acknowledgements
+
+            - Code Institue Tutor Support.
+            - My Mentor.
+
+
+
+
+
+
+
 
 
 
